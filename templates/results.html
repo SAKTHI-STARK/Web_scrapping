@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraped Data</title>
+    <style> body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; } h1 { color: #333; text-align: center; margin-bottom: 20px; } ul { list-style-type: none; padding: 0; } li { background-color: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); } a { color: #007bff; text-decoration: none; } a:hover { text-decoration: underline; } </style>
+</head>
+<body>
+    <h1>Scraped Data</h1>
+    <ul>
+        {% for item in data %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
