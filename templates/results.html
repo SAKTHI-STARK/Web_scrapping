@@ -9,8 +9,8 @@
 <body>
     <h1>Scraped Data</h1>
     <ul>
-        {% for item in data %}
-            <li>{{ item }}</li>
+        {% for item in data %} 
+        <li>{{ item | safe }}</li> 
         {% endfor %}
     </ul>
 </body>
