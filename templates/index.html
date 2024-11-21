@@ -4,13 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Price Comparison</title>
+    <style>body {
+        display:block;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: black;
+        color:white;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    input[type="text"] {
+        width: 700px;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+    
+    button {
+        position:relative;
+        display:inline-block;
+        padding: 10px 20px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    p{
+        text-align:justify;
+        padding-left:200px;
+        padding-right:200px;
+    }
+    </style>
 </head>
 <body>
     <h1>Product Price Comparison</h1>
     <form method="POST">
-        <label for="product_name">Enter Product Name:</label>
-        <input type="text" id="product_name" name="product_name" required>
+        <input type="text" id="product_name" placeholder="Enter Product Name" name="product_name" required>
         <button type="submit">Compare Prices</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Welcome to PriceComparison – your ultimate destination for finding the best deals on your favorite products! Our website uses advanced web scraping technology powered by Selenium to directly extract real-time prices and data from top e-commerce websites like Flipkart and Amazon. Simply enter the product name in the search bar, and we'll do the rest. Compare prices and make informed purchasing decisions all in one place. Start saving today with PriceComparison!</p>
     </form>
 </body>
 </html>
