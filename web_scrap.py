@@ -7,7 +7,7 @@ import time
 def call_website(product_name):
     # Set up the Edge driver
     product_name=product_name.replace(" ","%20")
-    driver_path = r"C:\Users\sakth\Downloads\msedgedriver.exe"
+    driver_path = r"E:\software\msedgedriver.exe"
     service = Service(driver_path)
     options = Options()
     options.use_chromium = True  # Ensure Chromium-based Edge is used
@@ -24,12 +24,6 @@ def call_website(product_name):
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     # Extract the desired elements
     elements = soup.find('div', class_='wtb-container pricee-cntnr').find_all('ul',id='wheretobuy')
-    # Close the browser
-  
-    # for ele in elements:
-    #     tags=ele.find_all('li',class_='ng-scope') 
-    # print(tags)
-    # print('-'*20)    
     for val in elements:
         price=val.find_all('div',class_='pd-detail tbl-col')
     driver.quit()
